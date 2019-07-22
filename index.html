@@ -23,14 +23,67 @@
                 <a href="https://adka28.github.io/MyPortfolio/">Andrea Szaboova</a>
             </div>
             <div class="col pageApplication">
-                    <h4>Order pizza</h4>
-                    <h6>Details...</h6>
-                <p>Select toopings:</p>
                 <form id="appForm">
-                    <div class="row">
+                    <h3>Create your own pizza</h3>
+                    <p>Select your toppings and pizza size</p>
+                        <div class="row">
+                        <div class="col">
+                            <label>
+                                <h4>Toppings</h4>
+                            </label>
+                            <div class="checkbox">
+                                <label>
+                                    <input id="pizzaTopping1" type="checkbox" value="1">
+                                    Cheese
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input id="pizzaTopping2" type="checkbox" value="2">
+                                    Ham
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input id="pizzaTopping3" type="checkbox" value="3">
+                                    Pineapple
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input id="pizzaTopping4" type="checkbox" value="4">
+                                    Olives
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input id="pizzaTopping5" type="checkbox" value="5">
+                                    Mushrooms
+                                </label>
+                            </div>
+                            <label for="pizzaSize">
+                                <h4>Size</h4>
+                            </label>
+                            <select id="pizzaSize" class="form-control">
+                                <option disabled selected value> -- make selection -- </option>
+                                <option value="S">Small</option>
+                                <option value="M">Medium</option>
+                                <option value="L">LArge</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <button type="submit" class="btn btn-primary">Order</button>
+                        </div>
                     </div>
                 </form>
                 <div id="result">
+                    <h3>Your order</34>
+                    <h4>Toppings</h4>
+                    <div id="orderToppings"></div>
+                    <h4>Size</h4>
+                    <div id="orderSize"></div>
+                    <h4>Cost</h4>
+                    <div id="orderCost"></div>
                 </div>
             </div>
         </div>
